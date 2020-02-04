@@ -72,17 +72,54 @@ def getallrooms(request):
     print(request.body)
     get_rooms = Room.objects.all()
 
-    rooms = {}
+    rooms = {
+        "1": [
+    {
+      "x": 1,
+      "y": 1
+    },
+    {
+      "n": 2
+    },
+    {
+      "title": "Room 1"
+    },
+    {
+      "description": "There are exits to the north "
+    },
+    {
+      "items": []
+    }
+  ],
+  "2": [
+    {
+      "x": 1,
+      "y": 2
+    },
+    {
+      "a": 1
+    },
+    {
+      "title": "Room 2"
+    },
+    {
+      "description": "There are exits to the north "
+    },
+    {
+      "items": []
+    }
+  ],
+    }
 
     for room in get_rooms.values():
         id = str(room['id'])
-        xy = {"x": room['x'], "y": room['y']}
+        coordinates = {"x": room['x'], "y": room['y']}
         title = {"title": room['title']}
         description = {"description": room['description']}
         connections = {'n': room['n_to'], 'e': room['e_to'], 'w': room['w_to'], 's': room['s_to']}
         connections = { k: v for k, v in connections.items() if v != 0}
         
-        modified_room = [xy, connections, title, description, {"items": []}]
+        modified_room = [coordinates, connections, title, description, {"items": []}]
         rooms[id] = modified_room
         
     return JsonResponse({"rooms": rooms}, safe=True, status=200)
