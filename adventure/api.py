@@ -72,7 +72,8 @@ def getallrooms(request):
     print(request.body)
     get_rooms = Room.objects.all()
 
-    rooms = [{"id": 0, "x": 0, "y": 0, "Title": "Origin", "n": 1, "s": 11, "e": 21, "w": 31,
+    rooms = {
+        "1": [{"id": 0, "x": 0, "y": 0, "Title": "Origin", "n": 1, "s": 11, "e": 21, "w": 31,
               "description": "Here is the Origin, You may travel North, West, East or South."},
               #north
               {"id": 1, "x": 0, "y": 1, "Title": "Hallway N1", "n": 2, "s": 0, "e": -1, "w": -1,
@@ -272,7 +273,7 @@ def getallrooms(request):
               "description": "This is a room! What will you find in here?"},
               {"id": 95, "x": 20, "y": 34, "Title": "Dining Room 3", "n": 10 , "s": 21, "e":3 , "w": 2,
               "description": "This is a room! What will you find in here?"},
-              {"id": 96, "x": 21, "y": 86, "Title": "Dining Room 4", "n": 14, "s": , 32"e": 45, "w": 64,
+              {"id": 96, "x": 21, "y": 86, "Title": "Dining Room 4", "n": 14, "s": 12,"e": 45, "w": 64,
               "description": "This is a room! What will you find in here?"},
               {"id": 97, "x": 22, "y": 12, "Title": "Bedroom 1", "n": 34, "s": 54 , "e": 45, "w": 65,
               "description": "This is a room! What will you find in here?"},
