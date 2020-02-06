@@ -81,7 +81,7 @@ def getallrooms(request):
               "description": "This is a room! What will you find in here?"}],
               [{"id": 3, "x": 0, "y": 3, "Title": "Hallway N3", "n": 4, "s": 2, "e": -1, "w": -1,
               "description": "This is a room! What will you find in here?"}],
-    [{"id": 4, "x": 0, "y": 4, "Title": "Hallway N4", "n": 5, "s": 3, "e": -1, "w": -1,
+              [{"id": 4, "x": 0, "y": 4, "Title": "Hallway N4", "n": 5, "s": 3, "e": -1, "w": -1,
               "description": "This is a room! What will you find in here?"}],
               [{"id": 5, "x": 0, "y": 5, "Title": "Hallway N5", "n": 6, "s": 4, "e": 116, "w": -1,
               "description": "This is a room! What will you find in here?"}],
@@ -282,7 +282,7 @@ def getallrooms(request):
               # "description": "This is a room! What will you find in here?"},
               # {"id": 100, "x": 25, "y": 59, "Title": "Bedroom 4", "n":23 , "s":11 , "e":43 , "w": 21,
               # "description": "This is a room! What will you find in here?"}]}
-    ]}
+    }
 
     for room in get_rooms.values():
         id = str(room['id'])
