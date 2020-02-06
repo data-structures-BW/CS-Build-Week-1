@@ -73,7 +73,7 @@ def getallrooms(request):
     get_rooms = Room.objects.all()
 
     rooms = {
-        "1": [{"x": 0,"y": 1},{"n": 2},{"title": "Room 1"},{ "description": "There are exits to the north "},{"items": []}],
+        "1": [{"x": 0,"y": 1},{"n": 2},{"e": 100}{"title": "Room 1"},{ "description": "There are exits to the north "},{"items": []}],
         "2": [{"x": 0,"y": 2},{"a": 1},{"title": "Room 2"},{"description": "There are exits to the north "},{"items": []}],  
         "3": [{"x": 0,"y": 3},{"a": 1},{"title": "Room 3"},{"description": "There are exits to the north "},{"items": []}], 
         "4": [{"x": 0, "y":4 }, {"a": 1},{"title": "Room 4"},{"description": "There are exits to the north "},{"items": []}],
@@ -123,7 +123,7 @@ def getallrooms(request):
         "48": [{"x": 1,"y": 45},{"a": 1},{"title": "Room 3"},{"description": "There are exits to the north "},{"items": []}], 
         "49": [{"x": 1, "y": 34 }, {"a": 1},{"title": "Room 4"},{"description": "There are exits to the north "},{"items": []}],
         "50": [{"x": 1,"y": 56},{"n": 2},{"title": "Room 1"},{ "description": "There are exits to the north "},{"items": []}],
-        "51: [{"x": 0,"y": 1},{"n": 2},{"title": "Room 1"},{ "description": "There are exits to the north "},{"items": []}],
+        "51:" [{"x": 0,"y": 1},{"n": 2},{"title": "Room 1"},{ "description": "There are exits to the north "},{"items": []}],
         "52": [{"x": 0,"y": 2},{"a": 1},{"title": "Room 2"},{"description": "There are exits to the north "},{"items": []}],  
         "53": [{"x": 0,"y": 3},{"a": 1},{"title": "Room 3"},{"description": "There are exits to the north "},{"items": []}], 
         "54": [{"x": 0, "y":4 }, {"a": 1},{"title": "Room 4"},{"description": "There are exits to the north "},{"items": []}],
