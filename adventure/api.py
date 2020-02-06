@@ -73,76 +73,33 @@ def getallrooms(request):
     get_rooms = Room.objects.all()
 
     rooms = {
-        "1": [
-    {
-      "x": 1,
-      "y": 1
-    },
-    {
-      "n": 2
-    },
-    {
-      "title": "Room 1"
-    },
-    {
-      "description": "There are exits to the north "
-    },
-    {
-      "items": []
-    }
-  ],
-  "2": [
-    {
-      "x": 1,
-      "y": 2
-    },
-    {
-      "a": 1
-    },
-    {
-      "title": "Room 2"
-    },
-    {
-      "description": "There are exits to the north "
-    },
-    {
-      "items": []
-    }
-  ],  "3": [
-    {
-      "x": 1,
-      "y": 3
-    },
-    {
-      "a": 1
-    },
-    {
-      "title": "Room 3"
-    },
-    {
-      "description": "There are exits to the north "
-    },
-    {
-      "items": []
-    }
-  ],  "4": [
-    {
-      "x": 1,
-      "y": 4
-    },
-    {
-      "a": 1
-    },
-    {
-      "title": "Room 4"
-    },
-    {
-      "description": "There are exits to the north "
-    },
-    {
-      "items": []
-    }
-  ],
+        "1": [{"x": 0,"y": 1},{"n": 2},{"title": "Room 1"},{ "description": "There are exits to the north "},{"items": []}],
+        "2": [{"x": 0,"y": 2},{"a": 1},{"title": "Room 2"},{"description": "There are exits to the north "},{"items": []}],  
+        "3": [{"x": 0,"y": 3},{"a": 1},{"title": "Room 3"},{"description": "There are exits to the north "},{"items": []}], 
+        "4": [{"x": 0, "y":4 }, {"a": 1},{"title": "Room 4"},{"description": "There are exits to the north "},{"items": []}],
+        "5": [{"x": 0,"y": 1},{"n": 2},{"title": "Room 1"},{ "description": "There are exits to the north "},{"items": []}],
+        "6": [{"x": 0,"y": 2},{"a": 1},{"title": "Room 2"},{"description": "There are exits to the north "},{"items": []}],  
+        "7": [{"x": 0,"y": 3},{"a": 1},{"title": "Room 3"},{"description": "There are exits to the north "},{"items": []}], 
+        "8": [{"x": 0, "y": 4 }, {"a": 1},{"title": "Room 4"},{"description": "There are exits to the north "},{"items": []}],
+        "9": [{"x": 0,"y": 1},{"n": 2},{"title": "Room 1"},{ "description": "There are exits to the north "},{"items": []}],
+        "10": [{"x": 1,"y": 2},{"a": 1},{"title": "Room 2"},{"description": "There are exits to the north "},{"items": []}],  
+        "11": [{"x": 1,"y": 3},{"a": 1},{"title": "Room 3"},{"description": "There are exits to the north "},{"items": []}], 
+        "12": [{"x": 1, "y": 4 }, {"a": 1},{"title": "Room 4"},{"description": "There are exits to the north "},{"items": []}],
+        "13": [{"x": 1,"y": 1},{"n": 2},{"title": "Room 1"},{ "description": "There are exits to the north "},{"items": []}],
+        "14": [{"x": 1,"y": 2},{"a": 1},{"title": "Room 2"},{"description": "There are exits to the north "},{"items": []}],  
+        "15": [{"x": 1,"y": 3},{"a": 1},{"title": "Room 3"},{"description": "There are exits to the north "},{"items": []}], 
+        "16": [{"x": 1, "y": 4 }, {"a": 1},{"title": "Room 4"},{"description": "There are exits to the north "},{"items": []}],
+        "17": [{"x": 97,"y": 1},{"n": 2},{"title": "Room 1"},{ "description": "There are exits to the north "},{"items": []}],
+        "18": [{"x": 34,"y": 2},{"a": 1},{"title": "Room 2"},{"description": "There are exits to the north "},{"items": []}],  
+        "19": [{"x": 76,"y": 3},{"a": 1},{"title": "Room 3"},{"description": "There are exits to the north "},{"items": []}], 
+        "20": [{"x": 34, "y": 4 }, {"a": 1},{"title": "Room 4"},{"description": "There are exits to the north "},{"items": []}],
+        "21": [{"x": 1,"y": 1},{"n": 2},{"title": "Room 1"},{ "description": "There are exits to the north "},{"items": []}],
+        "22": [{"x": 1,"y": 98},{"a": 1},{"title": "Room 2"},{"description": "There are exits to the north "},{"items": []}],  
+        "23": [{"x": 1,"y": 45},{"a": 1},{"title": "Room 3"},{"description": "There are exits to the north "},{"items": []}], 
+        "24": [{"x": 1, "y": 34 }, {"a": 1},{"title": "Room 4"},{"description": "There are exits to the north "},{"items": []}],
+        "25": [{"x": 1,"y": 56},{"n": 2},{"title": "Room 1"},{ "description": "There are exits to the north "},{"items": []}],
+
+        
     }
 
     for room in get_rooms.values():
