@@ -4,24 +4,24 @@
 # You can modify generate_rooms() to create your own
 # procedural generation algorithm and use print_rooms()
 # to see the world.
-from adventure.models import Player, Room
-import random
+# from adventure.models import Player, Room
+# import random
 
-room_titles = [
-    ["cave", "hallway","extremely large boot", "volcano","highway","dungeon","cliff","monkey bars","playground","municipal court" ],
-    ["doom","storms","fire","ice","dragons","creepy people who stare at you for way too long without looking away","bananas"]
-]
+# room_titles = [
+#     ["cave", "hallway","extremely large boot", "volcano","highway","dungeon","cliff","monkey bars","playground","municipal court" ],
+#     ["doom","storms","fire","ice","dragons","creepy people who stare at you for way too long without looking away","bananas"]
+# ]
 
-room_description = ["I guess it's a room alright", "spelunkers beware", "Pretty nice spot I guess", "Beautiful place of wonder"]
+# room_description = ["I guess it's a room alright", "spelunkers beware", "Pretty nice spot I guess", "Beautiful place of wonder"]
 
-def room_title():
-    a = random.choice(room_titles[0])
-    b = random.choice(room_titles[1])
-    return f'{a} of {b}'
+# def room_title():
+#     a = random.choice(room_titles[0])
+#     b = random.choice(room_titles[1])
+#     return f'{a} of {b}'
 
-def room_description():
-    a = random.choice(room_description)
-    return a
+# def room_description():
+#     a = random.choice(room_description[0])
+#     return a
 
 class Room:
     def __init__(self, id, name, description, x, y):
@@ -97,7 +97,7 @@ class World:
                 direction *= -1
 
             # Create a room in the given direction
-            room = Room(room_count, room_title(), room_description(), x, y)
+            room = Room(room_count, "A Generic Room", "This is a generic room.", x, y)
             # Note that in Django, you'll need to save the room after you create it
 
             # Save the room in the World grid
@@ -169,9 +169,9 @@ class World:
 
 
 w = World()
-num_rooms = 44
-width = 8
-height = 7
+num_rooms = 100
+width = 9
+height = 9
 w.generate_rooms(width, height, num_rooms)
 w.print_rooms()
 
