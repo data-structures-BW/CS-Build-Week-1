@@ -73,7 +73,6 @@ def getallrooms(request):
     get_rooms = Room.objects.all()
 
     rooms = {
-        {
   "494": [
     {
       "x": 1,
@@ -8358,8 +8357,8 @@ def getallrooms(request):
     },
     {
       "description": "There are exits to the south west "
-    },
-  ]
+    }
+  ],
 }
 
     for room in get_rooms.values():
