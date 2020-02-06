@@ -73,7 +73,7 @@ def getallrooms(request):
     get_rooms = Room.objects.all()
 
     rooms = {
-        "1": [{"id": 0, "x": 0, "y": 0, "Title": "Origin", "n": 1, "s": 11, "e": 21, "w": 31,
+        [{"id": 0, "x": 0, "y": 0, "Title": "Origin", "n": 1, "s": 11, "e": 21, "w": 31,
               "description": "Here is the Origin, You may travel North, West, East or South."},
               #north
               {"id": 1, "x": 0, "y": 1, "Title": "Hallway N1", "n": 2, "s": 0, "e": -1, "w": -1,
