@@ -8362,9 +8362,6 @@ def getallrooms(request):
   ]
 }
 
-        
-    }
-
     for room in get_rooms.values():
         id = str(room['id'])
         coordinates = {"x": room['x'], "y": room['y']}
