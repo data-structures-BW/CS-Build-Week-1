@@ -92,7 +92,7 @@ all_rooms = [{"id": 0, "x": 0, "y": 0, "Title": "Origin", "n": 1, "s": 11, "e": 
               {"id": 40, "x": 10, "y": 0, "Title": "Hallway W10", "n": -1, "s": -1, "e": 39, "w": 86,
               "description": ""},
               #north origin
-              {"id": 41, "x": 0, "y": 11, "Title": "", "n": , "s": , "e": , "w": ,
+              {"id": 41, "x": 0, "y": 11, "Title": "Hallway N1", "n": , "s": , "e": , "w": ,
               "description": ""},
               {"id": 42, "x": 0, "y": 12, "Title": "", "n": , "s": , "e": , "w": ,
               "description": ""},
